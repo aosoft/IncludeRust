@@ -10,7 +10,7 @@ public class RustLib : ModuleRules
 		var buildConfiguration = Target.Configuration == UnrealTargetConfiguration.Shipping ? "release" : "debug";
 		if (Target.Platform == UnrealTargetPlatform.Win64)
 		{
-			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "target", buildConfiguration, "RustLib.lib"));
+			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "target", buildConfiguration, "rust_lib.lib"));
 			PublicAdditionalLibraries.Add("ntdll.lib");
 			PublicAdditionalLibraries.Add("userenv.lib");
 		}		

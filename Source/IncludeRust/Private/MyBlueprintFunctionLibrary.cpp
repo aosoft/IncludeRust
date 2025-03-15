@@ -3,7 +3,7 @@
 
 #include "MyBlueprintFunctionLibrary.h"
 
-#include "RustLib2.h"
+#include "rust_lib2.h"
 
 int UMyBlueprintFunctionLibrary::Add(int Left, int Right)
 {
